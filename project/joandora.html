@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to bottom,rgb(180, 218, 241),white);
+        }
+        #wrap{
+            width: 80%;
+            border: 1px solid #000000;
+            overflow: hidden;
+            margin: 0 auto;
+            
+        }
+        #header{
+            background-size: 100%;
+            position: relative;
+            height: 250px;
+            background-image: url(bg.png);
+        }
+        #header p{
+            position: absolute;
+            left: 20px;
+            font-size: 35px;
+            font-weight: bold;
+            color: #ffff00;
+        }
+       #menu ul{
+           margin: 0 auto;
+           padding: 0;
+       }
+        #menu ul li{
+            float: left;
+            text-align: center;
+            list-style: none;
+            width: 25%;
+           
+        }
+        #menu ul li a{
+            height: 40px;
+            line-height: 40px;
+            background-color: #008000;
+           display: block;
+            text-decoration: none;
+            color: #ffffff;
+        }
+        #menu ul li a:hover{
+            
+            color: #008000;
+            background-color: #ffffff;
+        }
+       
+        #content .con{
+            height: 400px;
+            padding: 15px;
+            width: 65%;
+            height: auto;
+            float: left;
+        }
+        
+        #image{
+            height: 400px;
+            width: 25%;
+            background-color: #bdf0bd;
+            float: right;
+            margin: 0 auto;
+            text-align: center; 
+            
+        }
+        #image img{
+            margin: 8px;
+            border: 1px solid #cccccc;
+            
+        }
+        #footer{
+            height: 100px;
+            line-height: 50px;
+            clear: both;
+            background-color: #061F1F;
+            color: white;
+            text-align: center;
+        }
+    
+        @media screen and (max-width:1024px) {
+        body {  width: 100%; margin: 0 auto; padding: 2%;}
+        #header{background-size: 170%;}
+        #content .con{width: auto; float: none;}
+        #image {width: auto; float: none; }
+        #footer{padding: 1px; line-height: 40px;}
+        }
+        @media screen and (max-width:768px) {
+        body { border: none; width: 100%; margin: 0 auto; }
+        #header { background: black; height: 75px;}
+        #menu { padding-top: 10px;}
+        #menu ul {padding: 14px 20px;}
+        #menu ul li {display: block; width: 100%; height: 50px;}
+        #menu ul li a {
+            border: 1px solid #cccccc;
+            color: #013d5b;
+            border-radius: 10px;
+            font-size : 15px;
+            background: #ffffff;
+        }
+        #image {width: auto; height: auto;  text-align: center; margin: 0 auto; }
+        #image img{width: 95%;}
+        #footer {font-size:15px;}
+        }
+    
+    </style>
+    </head>
+    <body>
+    <div id="wrap">
+    <div id="header">
+        <p>JOANDORA</p>
+    </idv>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">객실소개</a></li>
+            <li><a href="#">예약방법</a></li> 
+            <li><a href="#">예약하기</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div class="con">
+        <p><h2>요안도라 소개</h2></p>
+        <p><h4>¤ 요안도라는 게스트 하우스(Guest House) 형식의 농어촌 민박입니다.</h4>
+            성산의 날씨는 다음주 내내 높은 구름에 햇살 가득이라고 합니다. 목요일이면 섭씨 27도까지 오른다고 하지만,
+             늘 부는 바람이 쾌적한 균형을 잡아 마당에 마당에 나가 앉아 있는 시간이 많아질듯 합니다.<br><br>
+            
+            오늘은 사진에 보이는 긴 돌담을 따라 들어오는 요안도레 올레 입구에 특곤색의 대문을 달았습니다.<br><br>
+            
+            내일은 두달 여동안 밖거리에 만든 게스트 하우스에 연백색의 황토 페인트를 칠할 예정입니다. 
+            그리고 이것저것 사소한 정리를 마치고 나면, 나이 드시고 젊고 한 미지의 새식구들을 설렘으로 만나고 함께하고,
+             도시의 바쁜 생활로 소원해진 오래된 친구와의 우정을 이 제주에서 새롭게 열어나가기 위해 요안도라를 세상에 알리려고 합니다.</br><br>
+            
+            그럼 이 홈페이지를 공식적으로 체계적으로 갖추면서, 그동안 공사로 어수선해 올려드리지 못한 집 안팎 사진들을 
+            상세하게 올리고 당신을 만날 채비를 마치겠습니다.</p>
+        </div>
+    </div>
+    <div id="image">
+    <img src="./1.jpg"><br>
+        <img src="./2.jpg"><br>
+        <img src="./3.jpg">
+    </div>
+    <div id="footer">
+        <p>제주특별자치도 남제주군 성산읍 수산리 000 번지</br>
+        Copyright ©. All rights reserved.</p>
+    </div>
+    </div>
+    </body>
+    </html>
